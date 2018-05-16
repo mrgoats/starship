@@ -1,0 +1,14 @@
+<ul>
+  <div *ngIf="movie">
+    <ngb-alert type="info" [dismissible]="false">
+      <h3>{{movie.title}}</h3>
+      <p>{{movie.opening_crawl}}</p>
+      <p>Star Wars Episode {{movie.episode_id}}</p>
+      <p>Director: {{movie.director}}</p>
+      <p>Producer: {{movie.producer}}</p>
+      <p>Released: {{movie.release_date | date}}</p>
+    </ngb-alert>
+  </div>
+</ul>
+
+<button class="btn btn-default" (click)='onBack()'>Go back</button>
