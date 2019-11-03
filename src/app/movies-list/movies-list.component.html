@@ -1,10 +1,19 @@
-<div class="row">
-    <div *ngFor="let movie of movies | async;  let i=index; trackBy: trackById" class="card" style="width: 18rem;margin:10px;">
-        <img class="card-img-top" src="http://via.placeholder.com/286x180" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">{{movie.title}}</h5>
-            <p class="card-text">{{movie.opening_crawl.substring(0,200).concat('...')}}</p>
-            <a [routerLink]="['/movies', i+1]" class="btn btn-primary">See details</a>
-        </div>
-    </div>
+<h1>Movies</h1>
+<div *ngIf="!movies">
+    <div class="loader"></div>
+</div>
+<div *ngIf="movies">
+    <ul class="row">
+        <li *ngFor="let movie of movies | async;  let i=index; trackBy: trackById" class="card">
+            <figure>
+                <img class="card-img-top" src="http://via.placeholder.com/286x180" alt="Card image placeholder">
+            </figure>
+            <div class="card-body">
+                <h3 class="card-title">{{movie.title}}</h3>
+                <p>Episode {{movie.episode_id}}</p>
+                <p class="card-text">{{movie.opening_crawl.substring(0,200).concat('...')}}</p>
+                <a [routerLink]="['/movies', i+1]" class="btn btn-primary">See details</a>
+            </div>
+        </li>
+    </ul>
 </div>

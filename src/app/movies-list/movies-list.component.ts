@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { MoviesListService } from './movies-list.service';
 
 @Component({
-  selector: 'movies-list',
+  selector: 'app-movies-list',
   templateUrl: './movies-list.component.html',
   styleUrls: ['./movies-list.component.css']
 })

@@ -1,12 +1,12 @@
 # Starship
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
 
 ## Instructions
 
 1. Run npm install to install dependencies.
-2. Run npm start to compile and load the application.
-3. The application will open a new window and run on `http://localhost:4200/`.
+2. Run npm start to compile and load the application. 
+3. The application will open a new window and run on http://localhost:4200/.
 
 ## Development server
 

@@ -21,7 +21,7 @@ export class MovieDetailsComponent implements OnInit {
   }
 
   onBack(): void {
-    this._router.navigate(['/home']);
+    this._router.navigate(['/movies']);
   }
 
 }
